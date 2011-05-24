@@ -1,0 +1,4 @@
+<h2><%= @user.username %>'s contact sheet</h2>
+<% unless @photos.nil? or @photos.empty? %>
+  <%= render :partial => 'sheet' %>
+<% end %>

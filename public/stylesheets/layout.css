@@ -1,0 +1,36 @@
+@import url(blank-canvas.css);
+@import url(base-typography.css);
+@import url(base-datasets.css);
+@import url(assets.css);
+
+@media all {
+
+  body { 
+  }
+  
+  header, footer, .container {
+    width: 640px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  header {
+    padding: 20px 0 10px;
+  }
+  
+  header #tagline {
+    font-style: italic;
+    font-size: 0.75em;
+  }
+  
+  footer {
+    padding: 15px 0 40px;
+  }
+  
+  footer summary,
+  footer p {
+    font-size: 0.75em;
+    margin-bottom: 0.5em;
+  }
+
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Insta.sheet</title>
+  <meta charset="utf-8" />
+  <%= javascript_include_tag :defaults %>
+  <%= stylesheet_link_tag "layout" %>
+  <%= csrf_meta_tag %>
+</head>
+<body id="section-<%= controller_name %>">
+
+    <header>
+      <h1>Insta.sheet</h1>
+      <p id="tagline">Your personal Instagr.am contact sheet</p>
+    </header>
+
+    <section id="notices" class="container">
+      <!--<p><%= debug session %><br /><%= debug params %></p>-->
+      <% if notice or alert %><p><%= notice %> <%= alert %></p><% end %>
+    </section>
+
+    <section id="content" class="container">
+      <%= yield %>
+    </section>
+
+    <footer>
+      <details>
+        <summary>This is an Alpha release of an <a href="http://made.byideas.co.uk/i49">idea</a> posted on <a href="http://made.byideas.co.uk">made.byideas</a>. A copy of the source can be found on <a href="">GitHub</a>.</summary>
+        <p>Drop me an <a href="mailto:andrew@madebymany.co.uk">email</a> if you'd like to continue development of this idea yourself.</p>
+      </details>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+@media screen {
+
+  /* =form */
+
+    form { padding-bottom: 10px; }
+    form fieldset { padding: 0 0 10px; }
+    form fieldset.controls { padding: 0; }
+
+  /* =label */
+  
+    label { 
+      display: block; position: relative; 
+      color: #303235; 
+    }
+
+  /* =input */
+
+    label.text input { 
+      padding: 5px; margin-bottom: 1em; font-size: 1em; margin-top: 0;
+      border: 1px solid #cccccc; color: #303235; width: 290px;
+      font-family: Arial, Helvetica, Sans-serif;
+    }
+
+  /* =checkbox */
+
+    label.checkbox {
+      margin-bottom: 0.75em;
+      margin-top: -0.25em;
+    }
+
+    label.checkbox span {
+      font-family: Arial, Helvetica, Sans-serif;
+      color: #333; font-size: 0.75em; 
+      text-shadow: 0 1px 1px rgba(255,255,255,1); 
+    }
+    
+  /* =textarea */
+
+    textarea { 
+      font-size: 1em; padding: 5px; margin-bottom: 1em; 
+      font-family: Arial, Helvetica, Sans-serif; color: #303235;
+      border: 1px solid #cccccc; width: 498px;
+    }
+
+}

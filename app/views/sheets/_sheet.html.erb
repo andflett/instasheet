@@ -1,0 +1,8 @@
+<ul id="sheet">
+<% @photos.each do |photo| %>
+  <li>
+    <a href="<%= photo.link %>"><img src="<%= photo.images.thumbnail.url %>" alt="<%= photo.caption %>" /></a>
+    <h3><% unless photo.caption.nil? %>'<%= photo.caption.text %>' <% end %>via <%= photo.user.username %></h3>
+  </li>
+<% end %>
+</ul>

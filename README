@@ -1,0 +1,7 @@
+Simple app to show a user's 'liked' photos
+==========================================
+
+bundle install
+rails server
+
+-- Note, this app currently relies on my fork of the official Instagram gem (https://github.com/andrewsenter/instagram-ruby-gem) until they accept the push, or fix it themselves.
